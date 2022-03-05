@@ -1,13 +1,13 @@
 version: '3.7'
 
 services:
-  hello-world-docker:
+  hello-world-with-docker:
     build:
       context: .
       dockerfile: Dockerfile
       target: base
     volumes:
       - ./src:/projects/hello-world/src
-    container_name: hello-world-docker
+    container_name: hello-world-with-docker
     
     command: npm run run
